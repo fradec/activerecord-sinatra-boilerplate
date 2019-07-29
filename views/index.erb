@@ -1,0 +1,13 @@
+<h1>Hello batch #290</h1>
+<h2>Here is the restaurants list:</h2>
+<a href="/restaurants/new">New restaurant</a>
+<ul>
+  <% @restaurants.each do |resto| %>
+    <li>
+      <h3>
+        <a href="/restaurants/<%= resto.id %>"><%= resto.name %></a>
+      </h3>
+    </li>
+  <% end %>
+</ul>
+
