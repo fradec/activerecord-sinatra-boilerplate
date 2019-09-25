@@ -19,6 +19,7 @@ end
 
 post "/restaurants" do
   resto = Restaurant.new(params)
+  p params
   resto.save
   redirect '/'
 end
